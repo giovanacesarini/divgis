@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/Municipios_1.js"></script><script src="layers/CuadrculasRosario_2.js"></script><script src="layers/BarriosRosario_3.js"></script><script src="layers/CuadriculasSantaFe_4.js"></script><script src="layers/BarriosSantaFe_5.js"></script><script src="layers/Septiembrehastael08092024inclusiveRC_6.js"></script><script src="layers/AgostoRC_7.js"></script><script src="layers/JulioRC_8.js"></script><script src="layers/JunioRC_9.js"></script><script src="layers/MayoRC_10.js"></script><script src="layers/AbrilRC_11.js"></script><script src="layers/MarzoRC_12.js"></script><script src="layers/FebreroRC_13.js"></script><script src="layers/EneroRC_14.js"></script><script src="layers/Septiembrehastael08092024inclusiveR_15.js"></script><script src="layers/AgostoR_16.js"></script><script src="layers/JulioR_17.js"></script><script src="layers/JunioR_18.js"></script><script src="layers/MayoR_19.js"></script><script src="layers/AbrilR_20.js"></script><script src="layers/MarzoR_21.js"></script><script src="layers/FebreroR_22.js"></script><script src="layers/EneroR_23.js"></script><script src="layers/Septiembrehastael08092024inclusiveHAF_24.js"></script><script src="layers/AgostoHAF_25.js"></script><script src="layers/JulioHAF_26.js"></script><script src="layers/JunioHAF_27.js"></script><script src="layers/MayoHAF_28.js"></script><script src="layers/AbrilHAF_29.js"></script><script src="layers/MarzoHAF_30.js"></script><script src="layers/FebreroHAF_31.js"></script><script src="layers/EneroHAF_32.js"></script><script src="layers/Septiembrehastael08092024inclusiveHHDD_33.js"></script><script src="layers/AgostoHHDD_34.js"></script><script src="layers/JulioHHDD_35.js"></script><script src="layers/JunioHHDD_36.js"></script><script src="layers/MayoHHDD_37.js"></script><script src="layers/AbrilHHDD_38.js"></script><script src="layers/MarzoHHDD_39.js"></script><script src="layers/FebreroHHDD_40.js"></script><script src="layers/EneroHHDD_41.js"></script>
+        <script src="styles/Municipios_1_style.js"></script><script src="styles/CuadrculasRosario_2_style.js"></script><script src="styles/BarriosRosario_3_style.js"></script><script src="styles/CuadriculasSantaFe_4_style.js"></script><script src="styles/BarriosSantaFe_5_style.js"></script><script src="styles/Septiembrehastael08092024inclusiveRC_6_style.js"></script><script src="styles/AgostoRC_7_style.js"></script><script src="styles/JulioRC_8_style.js"></script><script src="styles/JunioRC_9_style.js"></script><script src="styles/MayoRC_10_style.js"></script><script src="styles/AbrilRC_11_style.js"></script><script src="styles/MarzoRC_12_style.js"></script><script src="styles/FebreroRC_13_style.js"></script><script src="styles/EneroRC_14_style.js"></script><script src="styles/Septiembrehastael08092024inclusiveR_15_style.js"></script><script src="styles/AgostoR_16_style.js"></script><script src="styles/JulioR_17_style.js"></script><script src="styles/JunioR_18_style.js"></script><script src="styles/MayoR_19_style.js"></script><script src="styles/AbrilR_20_style.js"></script><script src="styles/MarzoR_21_style.js"></script><script src="styles/FebreroR_22_style.js"></script><script src="styles/EneroR_23_style.js"></script><script src="styles/Septiembrehastael08092024inclusiveHAF_24_style.js"></script><script src="styles/AgostoHAF_25_style.js"></script><script src="styles/JulioHAF_26_style.js"></script><script src="styles/JunioHAF_27_style.js"></script><script src="styles/MayoHAF_28_style.js"></script><script src="styles/AbrilHAF_29_style.js"></script><script src="styles/MarzoHAF_30_style.js"></script><script src="styles/FebreroHAF_31_style.js"></script><script src="styles/EneroHAF_32_style.js"></script><script src="styles/Septiembrehastael08092024inclusiveHHDD_33_style.js"></script><script src="styles/AgostoHHDD_34_style.js"></script><script src="styles/JulioHHDD_35_style.js"></script><script src="styles/JunioHHDD_36_style.js"></script><script src="styles/MayoHHDD_37_style.js"></script><script src="styles/AbrilHHDD_38_style.js"></script><script src="styles/MarzoHHDD_39_style.js"></script><script src="styles/FebreroHHDD_40_style.js"></script><script src="styles/EneroHHDD_41_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
